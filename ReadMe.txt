@@ -38,14 +38,6 @@ To test FlashGets:
 - Run "./main_2 flashgets"
 - This displays the status of EEPROM
 
-----------------------------------------------------------------------------------
-Limitations :
-1. The GPIO operations for LED have been commented out (for read operation) in Non blocking because it gives an issue
-"WARNING: at /home/rushang/build/meta-clanton_v1.0.1/yocto_build/tmp/work
-	/clanton-poky-linux/linux-yocto-clanton/3.8-r0/linux/drivers/gpio/gpiolib.c:1921 __gpio_set_value+0xd4/0xe0()"
-Because of this the kernel crashes and goes to an infinit loop when this PIN is set in the Work Queue.
-Considering the path show during the warning, It is out of my scope to resolve this issue. 
-
 --------------------------------------------------------------------------------
 References:
 1. linux source code i2c_dev.c
